@@ -1,0 +1,43 @@
+.modal__wrapper {
+  position: fixed;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgb(42, 155, 144);
+  border: 1px solid darkslategrey;
+}
+
+.add__text {
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+.form {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__input {
+    margin: 10px 0;
+    height: 30px;
+    width: 250px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+
+  &__btn {
+    padding: 5px;
+    width: 120px;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(42, 155, 144);
+  }
+}

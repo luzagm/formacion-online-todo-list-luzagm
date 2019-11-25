@@ -1,7 +1,76 @@
 @import "core/variables";
 @import "core/links";
+@import "layouts/modal";
 
 body {
   margin: 0;
+  box-sizing: border-box;
+}
+
+.page {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(42, 155, 144);
+}
+
+.main__container {
+  background-color: white;
+  width: 350px;
+  border-radius: 10px;
+}
+
+.header__box {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(42, 155, 144);
+}
+
+.logo {
+  height: 70px;
+}
+
+.date {
+  display: flex;
+
+  align-items: center;
+
+  &__number {
+    margin: 0;
+    padding-right: 5px;
+    font-size: 42px;
+    font-weight: bold;
+    color: rgb(42, 155, 144);
+  }
+
+  &__text {
+    margin: 0;
+    display: inline-block;
+    width: 120px;
+  }
+}
+
+.list__box {
+  min-height: 200px;
+}
+
+.footer {
+  &__box {
+    padding: 15px 0;
+    border-top: 1px solid rgb(42, 155, 144);
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    border-radius: 50%;
+    border: 2px solid rgb(42, 155, 144);
+    height: 50px;
+    width: 50px;
+    font-size: 32px;
+    font-weight: 400;
+    color: rgb(42, 155, 144);
+    background-color: white;
+  }
 }
