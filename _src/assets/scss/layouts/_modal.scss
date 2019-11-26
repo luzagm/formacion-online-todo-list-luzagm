@@ -1,9 +1,13 @@
-.modal__wrapper {
+.modal-bg {
   position: fixed;
-  padding: 15px 20px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.modal__wrapper {
+  padding: 15px 20px;
   background-color: rgb(42, 155, 144);
   border: 1px solid darkslategrey;
 }
@@ -40,4 +44,8 @@
     color: white;
     background-color: rgb(42, 155, 144);
   }
+}
+
+.is-hidden {
+  display: none;
 }

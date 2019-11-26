@@ -2,10 +2,10 @@
 <html lang="es">
     
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <title>To do list</title>
         <link rel="icon" href="favicon.png" />
-        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/main.css" />
     </head>
     
     <body>
@@ -14,24 +14,26 @@
                 <header class="header__box">
                     <img class="logo" src="./assets/images/adalab-logo.jpg" />
                     <div class="date">
-                        <p class="date__number">25</p>
-                        <p class="date__text">Miércoles Noviembre, 2019</p>
+                        <p class="date__number js-dateNumber"></p>
+                        <p class="date__text js-dateText"></p>
                     </div>
                 </header>
-                <section class="list__box"></section>
+                <ul class="list__box js-list"></ul>
                 <footer class="footer__box">
-                    <button type="button" class="footer__btn">+</button>
+                    <button type="button" id="modal-trigger" class="footer__btn">+</button>
                 </footer>
             </main>
-            <section class="modal__wrapper">
-                <p class="add__text">Add your task</p>
-                <form class="form__container">
-                    <input class="form__input js-input" type="text">
-                    <button type="submit" class="form__btn">Add</button>
-                </form>
+            <section class="modal-bg">
+                <div id="myModal" class="modal__wrapper is-hidden">
+                    <p class="add__text">Add your task</p>
+                    <form class="form__container">
+                        <input class="form__input js-input" type="text" />
+                        <button type="submit" class="form__btn js-addBtn">Add</button>
+                    </form>
+                </div>
             </section>
         </div>
-        <script src=""></script>
+        <script src="./assets/js/main.js"></script>
     </body>
 
 </html>

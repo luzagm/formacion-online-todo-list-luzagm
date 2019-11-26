@@ -52,8 +52,16 @@ body {
   }
 }
 
-.list__box {
-  min-height: 200px;
+.list {
+  &__box {
+    min-height: 200px;
+    list-style: none;
+  }
+  &__item {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer {
